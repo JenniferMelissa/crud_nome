@@ -28,7 +28,7 @@ while True:
 
     #limpando codigo
     os.system('cls')
-    
+
     match opcao:
         case '1':
             for i in range(len(nomes)):
@@ -55,7 +55,7 @@ while True:
                 continue
         case '5':
             try:
-                indice = input('Informe o índice a ser excluido: ')
+                indice = int(input('Informe o índice a ser excluido: '))
                 del(nomes[indice])
                 print('Nome excluído com sucesso.')
             except:
